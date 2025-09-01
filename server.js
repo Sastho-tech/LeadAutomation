@@ -14,7 +14,7 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 // Facebook API to fetch lead details
 async function getLeadDetails(leadgenId) {
-  const pageAccessToken = 'your_facebook_page_access_token'; // Update this
+  const pageAccessToken = 'EAAPML8hCW7ABPXOGfk3KejaETWzwryV5WPcfkg6OP5eamf85PEus1o6ZB2xYBPiAcFpxzuZBdqYuXtZCjyBzGqt2QtERdcIIlXT75vgslEDUq8ho5w9ejai1FLx0w8ZAY2O82LTaPacwIXMZBcObSMdv4VOWBxaHKln0Tyom23FTf2wiWxaG9Hs8xhRNVVsytAQ5pMbEOwwaQfUHb9jQomAD3iRINAuBRw7wUm4olaz9AoIzGqleOPywZD'; // Update this
   const url = `https://graph.facebook.com/v13.0/${leadgenId}?access_token=${pageAccessToken}`;
   try {
     const response = await fetch(url);
@@ -114,3 +114,4 @@ function isValidSignature(req) {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Listening on :${PORT}`));
+
