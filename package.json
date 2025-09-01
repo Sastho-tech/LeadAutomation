@@ -1,0 +1,17 @@
+{
+    "name": "fb-webhook-starter",
+    "version": "1.0.0",
+    "main": "server.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.1",
+        "express": "^4.21.2"
+    },
+    "description": "",
+    "keywords": [],
+    "author": ""
+}
